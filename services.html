@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+  Web Technologies - Assignment 1 (CLO1)
+  Saffron & Salt Restaurant Website - Services page
+  Made by: Areej Zeb Satti (052-SP24-24255), BSCS, Iqra University
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Areej Zeb Satti">
+  <title>Services - Saffron &amp; Salt</title>
+
+  <!-- Bootstrap, icons and my own stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Saffron <span>&amp;</span> Salt</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="mb-0">Eat with us, take it home, or let us cook for your event.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="service-box">
+              <i class="bi bi-shop"></i>
+              <h5 class="mt-2">Dine-In</h5>
+              <p class="mb-0">Seating for 80 people with a separate family hall.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="service-box">
+              <i class="bi bi-bicycle"></i>
+              <h5 class="mt-2">Home Delivery</h5>
+              <p class="mb-0">Free delivery within 5 km on orders above Rs. 2,000.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="service-box">
+              <i class="bi bi-gift"></i>
+              <h5 class="mt-2">Birthday Bookings</h5>
+              <p class="mb-0">Book the family hall for birthdays and small get-togethers.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="service-box">
+              <i class="bi bi-truck"></i>
+              <h5 class="mt-2">Catering</h5>
+              <p>Food for weddings, dawats and office events.</p>
+              <button type="button" class="btn btn-main btn-sm" data-bs-toggle="modal" data-bs-target="#cateringModal">View Packages</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu table -->
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <h2 class="text-center">Menu</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered menu-table bg-white">
+            <thead>
+              <tr>
+                <th scope="col">Dish</th>
+                <th scope="col">Type</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Chicken Biryani</td><td>Rice</td><td>Rs. 650</td></tr>
+              <tr><td>Chicken Karahi (half)</td><td>Karahi</td><td>Rs. 1,400</td></tr>
+              <tr><td>Chicken Karahi (full)</td><td>Karahi</td><td>Rs. 2,600</td></tr>
+              <tr><td>Seekh Kebab (4 pcs)</td><td>BBQ</td><td>Rs. 900</td></tr>
+              <tr><td>Daal Tadka</td><td>Vegetarian</td><td>Rs. 450</td></tr>
+              <tr><td>Fresh Salad</td><td>Side</td><td>Rs. 200</td></tr>
+              <tr><td>Kheer</td><td>Dessert</td><td>Rs. 300</td></tr>
+              <tr><td>Doodh Patti Chai</td><td>Drink</td><td>Rs. 120</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catering modal -->
+    <div class="modal fade" id="cateringModal" tabindex="-1" aria-labelledby="cateringModalLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cateringModalLabel">Catering Packages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li><strong>Basic (Rs. 1,500 per head):</strong> Biryani, chicken qorma, raita, salad, naan</li>
+              <li><strong>Standard (Rs. 2,200 per head):</strong> Basic + karahi, kheer, cold drinks</li>
+              <li><strong>Premium (Rs. 3,000 per head):</strong> Standard + live BBQ and chai</li>
+            </ul>
+            <p class="mb-0 small">Minimum 50 guests. Call us or fill the form on the Contact page for a booking.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-main">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="siteFooter">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>Saffron &amp; Salt</h5>
+          <p>Desi food cooked the way it is cooked at home. Dine in, take away or order for your family events.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>
+            Block 6, Gulshan-e-Iqbal, Karachi<br>
+            Phone: <a href="tel:+922100000000">021&#8209;0000&#8209;0000</a><br>
+            Open daily: 12 pm &ndash; 12 am
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Saffron &amp; Salt | Website designed and developed by Areej Zeb Satti</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
